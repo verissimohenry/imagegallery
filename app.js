@@ -12,8 +12,16 @@ imageIndexes.forEach((i) => {
 
     image.addEventListener('click', () =>{
         //popup staff
-        selectedImage.src ='/images/cover__episode-${i}.jpg';
+        popup.style.transform = 'translateY(0)';
+        selectedImage.src = '/images/cover__episode-${i}.jpg';
+        selectedImage.alt = 'Cover for Episode ${i} of the Compressed.fm Podcast';
     })
 
     gallery.appendChild(image);
+});
+
+popup.addEventListener('click', () =>{
+    popup.style.transform = 'translateY(100%)';
+    popup.src = '';
+    popup.alt = '';
 });
