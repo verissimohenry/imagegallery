@@ -12,6 +12,7 @@ imageIndexes.forEach((i) => {
 
     image.addEventListener('click', () =>{
         //popup staff
+        selectedImage.src ='/images/cover__episode-${i}.jpg';
     })
 
     gallery.appendChild(image);
